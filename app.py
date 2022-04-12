@@ -346,7 +346,7 @@ with colb1:
 
         fig2.add_trace(go.Scatter(x=df_timeline['transaction_date'], y=df_timeline['total_eth_transferred'], name="total_eth_transferred"),secondary_y=True,)
 
-        fig2.update_layout(title={'text': '<b>ETH transfers over the selected time period<b>', 'font': {'size': 30}, 'xanchor': 'center', 'x':0.4})
+        fig2.update_layout(title={'text': '<b>ETH transfers over the time period<b>', 'font': {'size': 30}, 'xanchor': 'center', 'x':0.4})
         fig2.update_xaxes(title_text="Timeline")
         fig2.update_yaxes(title_text="transaction_count", secondary_y=False)
         fig2.update_yaxes(title_text="total_eth_transferred", secondary_y=True)
