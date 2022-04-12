@@ -142,7 +142,7 @@ with colb1:
 
             if min_unindexed_date == max_unindexed_date: #to deal with the situation where unindexed_data_lis has only one element
                 min_unindexed_date = min_unindexed_date - datetime.timedelta(days=1)
-                max_unindexed_date = max_unindexed_date + datetime.timedelta(days=1)
+                #max_unindexed_date = max_unindexed_date + datetime.timedelta(days=1)
 
             start_block = pd.read_sql_query(f"SELECT block_number FROM blocks WHERE ref_date = '{str(min_unindexed_date)}';", engine)['block_number'][0]
             end_block = pd.read_sql_query(f"SELECT block_number FROM blocks WHERE ref_date = '{str(max_unindexed_date)}';", engine)['block_number'][0]
