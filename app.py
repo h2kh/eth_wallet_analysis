@@ -408,7 +408,7 @@ with colb2:
     st.write('### Overall structure:')
     st.write("""This app is created with Streamlit which is a Python-based web framework.\n
 Wallet transactions are collected from the EtherScan API. ETH/USD rates are collected from the CoinGecko API.\n
-Data as shown on a wallet's home page on EtherScan is not available from a single API endpoint. All of the data that is extracted from the different APIs is stored in a PostgreSQL database on AWS.\n
+Data as shown on a wallet's home page on EtherScan is not available from a single API endpoint. All of the data that is extracted from the different APIs is stored in a PostgreSQL database on AWS RDS.\n
 The different API endpoints used, in addition to my mental model of an ETH wallet transaction, influenced my design of the database. The unified view of the transactions data displayed above comes from joining and filtering the different tables in the database.\n""")
 
     image = Image.open('db_schema.png')
